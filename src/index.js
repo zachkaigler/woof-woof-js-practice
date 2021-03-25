@@ -9,7 +9,7 @@ let dogNameH2 = document.createElement("h2")
 let dogButton = document.createElement("button")
 let dogDomObj = {}
 
-// Fetch dog objects
+// Fetch dog objects and append to Dog Bar
 fetch("http://localhost:3000/pups")
     .then(resp => resp.json())
     .then(function (dogsArray) {
